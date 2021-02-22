@@ -1,5 +1,5 @@
 # AWS_S3_glacier
-Python scripts for operations on AWS S3 Glacier
+Python3 scripts for operations on AWS S3 Glacier
 
 ## Documentation
 ### Before You Begin
@@ -33,8 +33,8 @@ Change the arguments based on your needs.
 -v <vault name>             the name of the vault  
 -o <output file>            the output file name  
 ** The chunk size must be a megabyte (1024 KB) multiplied by a power of 2  
-** if you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id  
-** number of chunks must be < 10000, total size must be < 5 TB  
+** If you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id  
+** Number of chunks must be < 10000, total size must be < 5 TB  
 ```
 
 2. Check if upload is completed (the multipart upload may take up to 24 hrs to finish) (optional)  
@@ -46,7 +46,7 @@ Change the arguments based on your needs.
 -u <account id>             the account that owns the vault (optional)
 -v <vault name>             the name of the vault
 -o <output file>            the output file name
-** if you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
+** If you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
 ** You can also go on AWS S3 Glacier console to check if the archive appears there
 ```
 
@@ -61,7 +61,7 @@ Change the arguments based on your needs.
 -u <account id>            the account that owns the vault (optional)
 -v <vault name>            the name of the vault
 -o <output file>           the output file name
-** if you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
+** If you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
 ```
 
 2. Check if archive inventory retrieval initiation is completed (the initiation may take up to 24 hrs to finish) (optional)  
@@ -73,7 +73,7 @@ Change the arguments based on your needs.
 -u <account id>             the account that owns the vault (optional)
 -v <vault name>             the name of the vault
 -o <output file>            the output file name
-** if you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
+** If you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
 ```
 
 3. Retrieve the archive inventory to see what archives you have on the Glacier vault  
@@ -87,7 +87,7 @@ Change the arguments based on your needs.
 -v <vault name>             the name of the vault
 -o <output file>            the output file name
 ** Get the job id from the output of the previous step
-** if you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
+** If you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
 ```
 
 4. Initiate archive retrieval  
@@ -101,7 +101,7 @@ Change the arguments based on your needs.
 -v <vault name>             the name of the vault
 -o <output file>            the output file name
 ** Get the archive id from the output of the previous step
-** if you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
+** If you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
 ```
 
 5. Check if archive archive retrieval initiation is completed (the initiation may take up to 24 hrs to finish)  
@@ -113,7 +113,7 @@ Change the arguments based on your needs.
 -u <account id>             the account that owns the vault (optional)
 -v <vault name>             the name of the vault
 -o <output file>            the output file name
-** if you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
+** If you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
 ```
 
 6. Retrieve the archive  
@@ -129,7 +129,7 @@ Change the arguments based on your needs.
 -v <vault name>             the name of the vault
 -o <output file>            the output file name
 ** Get the job id and archive size from the output of the previous step
-** if you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
+** If you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
 ```
 
 
@@ -143,7 +143,7 @@ Change the arguments based on your needs.
 -u <account id>             the account that owns the vault (optional)
 -v <vault name>             the name of the vault
 -o <output file>            the output file name
-** if you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
+** If you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
 ```
 
 2. Check if archive inventory retrieval initiation is completed (the initiation may take up to 24 hrs to finish) (optional)  
@@ -155,7 +155,7 @@ Change the arguments based on your needs.
 -u <account id>             the account that owns the vault (optional)
 -v <vault name>             the name of the vault
 -o <output file>            the output file name
-** if you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
+** If you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
 ```
 
 3. Retrieve the archive inventory to see what archives you have on the Glacier vault  
@@ -169,7 +169,7 @@ Change the arguments based on your needs.
 -v <vault name>             the name of the vault
 -o <output file>            the output file name
 ** Get the job id from the output of the previous step
-** if you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
+** If you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
 ```
 
 4. Delete an archive  
@@ -183,5 +183,5 @@ Change the arguments based on your needs.
 -v <vault name>             the name of the vault
 -o <output file>            the output file name
 ** Get the archive id from the output of the previous step
-** if you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
+** If you don’t use -u flag or use -u -, it will set the account id you used to configure the AWS CLI as default account id
 ```
