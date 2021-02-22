@@ -6,7 +6,7 @@ import boto3
 from botocore.exceptions import ClientError
 from optparse import OptionParser
 
-# Usage: python3 glacier_get_job_output.py -v PalmerLab -j job_id -o out_file
+# Usage: python3 glacier_get_job_output.py -v glacier_vault -j job_id -o out_file
 
 def get_job_output(account_id, job_id, glacier_vault, out_file):
 	client = boto3.client('glacier')

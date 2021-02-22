@@ -6,7 +6,7 @@ import boto3
 from botocore.exceptions import ClientError
 from optparse import OptionParser
 
-# Usage: python3 glacier_list_jobs.py -v PalmerLab -o out_file
+# Usage: python3 glacier_list_jobs.py -v glacier_vault -o out_file
 
 def list_jobs(account_id, glacier_vault, out_file):
 	client = boto3.client('glacier')

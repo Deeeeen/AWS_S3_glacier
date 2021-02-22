@@ -9,7 +9,7 @@ from botocore.exceptions import ClientError
 from botocore.utils import calculate_tree_hash
 from optparse import OptionParser
 
-# Usage: python3 glacier_upload.py -v PalmerLab -f file_name -s 1GB -o out_file
+# Usage: python3 glacier_upload.py -v glacier_vault -f file_name -s 1GB -o out_file
 
 def multipart_upload(account_id, chunk_size, file_name, glacier_vault, out_file):
 	file_size = os.path.getsize(file_name)

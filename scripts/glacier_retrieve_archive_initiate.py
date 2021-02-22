@@ -7,7 +7,7 @@ from datetime import date
 from botocore.exceptions import ClientError
 from optparse import OptionParser
 
-# Usage: python3 glacier_retrieve_inventory_initiate.py -v PalmerLab -a archive_id -o outfile
+# Usage: python3 glacier_retrieve_inventory_initiate.py -v glacier_vault -a archive_id -o outfile
 
 def initiate_archive_retrieval(account_id, glacier_vault, archive_id, out_file):
 	client = boto3.client('glacier')

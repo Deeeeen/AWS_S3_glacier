@@ -6,7 +6,7 @@ import boto3
 from botocore.exceptions import ClientError
 from optparse import OptionParser
 
-# Usage: python3 glacier_retrieve_inventory_initiate.py PalmerLab out_file
+# Usage: python3 glacier_retrieve_inventory_initiate.py glacier_vault out_file
 
 def initiate_inventory_retrieval(account_id, glacier_vault, out_file):
 	client = boto3.client('glacier')

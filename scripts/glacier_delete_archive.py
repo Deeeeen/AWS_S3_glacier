@@ -6,7 +6,7 @@ import boto3
 from botocore.exceptions import ClientError
 from optparse import OptionParser
 
-# Usage: python3 glacier_delete_archive.py -v PalmerLab -a archive_id -o out_file
+# Usage: python3 glacier_delete_archive.py -v glacier_vault -a archive_id -o out_file
 
 def delete_archive(account_id, archive_id, glacier_vault, out_file):
 	client = boto3.client('glacier')
